@@ -1,0 +1,136 @@
+body {
+    background-color: cadetblue;
+}
+
+h2 {
+    color: aliceblue;
+    width: 1000px;
+    margin: auto;
+    margin-top: 100px;
+    font-size: 50px;
+}
+
+h3 {
+    color: rgb(50, 165, 231);
+}
+
+.container {
+    background-color: #2f3136;
+    height: 6500px;
+    width: 1200px;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 25px;
+}
+
+.IMG {
+    margin-left: 200px;
+    width: 750px;
+}
+
+h4 {
+    color: aliceblue;
+    font-size: 17px;
+}
+
+h5 {
+    color: aliceblue;
+    font-size: 17px;
+    margin-left: 100px;
+}
+
+.facebook {
+    margin-left: 100px;
+}
+
+.contenedor {
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.caja {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    transform-style: preserve-3d;
+    transform-origin: 200px 200px 0;
+    animation: girar 15s ease-in-out alternate infinite;
+}
+
+.cara {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    backface-visibility: hidden;
+}
+
+.cara img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cara1 {
+    transform: translateZ(200px);
+}
+
+.cara2 {
+    transform: rotateY(90deg) translateZ(200px);
+}
+
+.cara3 {
+    transform: rotateY(90deg) rotateX(90deg) translateZ(200px)
+}
+
+.cara4 {
+    transform: rotateX(180deg) rotateZ(-90deg) translateZ(200px);
+}
+
+.cara5 {
+    transform: rotateY(-90deg) rotateZ(90deg) translateZ(200px);
+}
+
+.cara6 {
+    transform: rotateX(-90deg) translateZ(200px) rotateZ(-90deg);
+}
+
+
+@keyframes girar {
+    0% {
+        transform: none;
+    }
+
+    13%,
+    16.6% {
+        transform: rotateY(-90deg);
+    }
+
+    301%,
+    33.33% {
+        transform: rotateY(-90deg) rotateZ(90deg);
+    }
+
+    46%,
+    49.999% {
+        transform: rotateY(-270deg) rotateZ(90deg);
+    }
+
+    63%,
+    66% {
+        transform: rotateY(90deg);
+    }
+
+    80%,
+    83% {
+        transform: rotateY(-180deg) rotateZ(90deg);
+    }
+
+    97%,
+    100% {
+        transform: none;
+    }
+}
